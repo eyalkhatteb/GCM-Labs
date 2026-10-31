@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="250.0" prefWidth="420.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gcm.WelcomeController">
+   <padding>
+      <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Welcome!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeLabel" textAlignment="CENTER" wrapText="true" />
+   </children>
+</VBox>

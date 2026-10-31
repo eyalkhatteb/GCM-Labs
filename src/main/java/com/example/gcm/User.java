@@ -99,6 +99,18 @@ public class User {
     }
 
     /**
+     * Checks whether a typed username and password belong to this user.
+     * The login screen uses it, so the password never has to leave this class.
+     *
+     * @param username the username that was typed
+     * @param password the password that was typed
+     * @return true if both are equal to this user's username and password
+     */
+    public boolean matches(String username, String password) {
+        return this.username.equals(username) && this.password.equals(password);
+    }
+
+    /**
      * Returns the line that UsersApp prints for this user: the username, one space,
      * and the password. The assignment's expected output includes the password,
      * so this is the only method that reveals it.
